@@ -12,8 +12,11 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           dateClick: function(info) {
-            console.log('clicked on ' + info.dateStr);
-            alert('a day has been clicked!');
+            debugger;
+            const [year, month, date] = info.dateStr.split("-");
+            if(year >= 2024 && month >= 3 && date >=26 && date<27){
+              window.location.href ="/" +date+"-"+month+"-"+year+"/"
+            }
           }
         });
         calendar.render();
