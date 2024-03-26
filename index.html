@@ -12,9 +12,8 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           dateClick: function(info) {
-            debugger;
             const [year, month, date] = info.dateStr.split("-");
-            if(year >= 2024 && month >= 3 && date >=26 && date<27){
+            if(year >= 2024 && month >= 3 && date >=24 && date<27){
               window.location.href ="/css-battle-challange/" +date+month+year+"/"
             }
           }
