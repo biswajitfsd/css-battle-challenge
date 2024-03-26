@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --back-color: rgba(108, 23, 21, 1);
+        --back-marph-color: rgba(108, 23, 21, 0.37);
+        --main-color: #C8393A;
+    }
+
+    body {
+        margin: 0;
+        background: var(--back-marph-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-top: 20px;
+        width: 400px;
+        height: 300px;
+        background: var(--back-marph-color);
+        box-shadow: 0 8px 32px 0 var(--back-color);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        outline: 20px solid var(--main-color);
+        border-radius: 50%;
+    }
+
+    .rod {
+        width: 20px;
+        height: 60px;
+        background: var(--main-color);
+    }
+
+    .triangle {
+        width: 150px;
+        height: 80px;
+        background: var(--main-color);
+        aspect-ratio: 1/cos(30deg);
+        clip-path: polygon(50% 100%, 100% 0, 0 0);
+    }
+</style>
+<body>
+<div class="box">
+    <section class="circle"></section>
+    <section class="rod"></section>
+    <section class="triangle"></section>
+</div>
+</body>
+</html>

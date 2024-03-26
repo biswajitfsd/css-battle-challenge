@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(5, 71, 108, .5);
+        }
+
+        .box {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            background: rgba(5, 71, 108, 1);
+            box-shadow: 0 8px 32px 0 rgba(5, 71, 108, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .left, .right {
+            width: 100px;
+            height: 200px;
+            background: #2BBBF3;
+            position: absolute;
+        }
+
+        .left {
+            bottom: 0;
+            left: 80px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        .right:after,
+        .left:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background: #CEEDFF;
+            top: 50%;
+        }
+
+        .right:after {
+            top: unset;
+            bottom: 50%;
+        }
+
+        .right {
+            right: 80px;
+            top: 0;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

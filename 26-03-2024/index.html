@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #FCDDEB;
+            margin: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .center-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rect-angle {
+            width: 140px;
+            height: 30px;
+            background: #D5007F;
+        }
+
+        .half-circle {
+            width: 140px;
+            height: 80px;
+            background: #D5007F;
+            border-top-left-radius: 130px;
+            border-top-right-radius: 130px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .h-rect {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 80px;
+            background: #F5A9CD;
+        }
+
+        .triangle-box {
+            width: 140px;
+            height: 70px;
+            background: #D5007F;
+            aspect-ratio: 1/cos(30deg);
+            clip-path: polygon(50% 100%, 100% 0, 0 0);
+            position: relative;
+            overflow: auto;
+        }
+
+        .triangle-box-2 {
+            position: absolute;
+            width: 140px;
+            height: 90px;
+            top: 70px;
+        }
+
+        .square {
+            width: 140px;
+            height: 20px;
+            background: #EF5CA5;
+        }
+
+        .triangle {
+            background: #EF5CA5;
+            aspect-ratio: 1/cos(30deg);
+            clip-path: polygon(50% 100%, 100% 0, 0 0);
+            width: 140px;
+            height: 70px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="center-box">
+    <div class="half-circle">
+        <div class="h-rect"></div>
+    </div>
+    <div class="rect-angle"></div>
+    <div class="triangle-box"></div>
+    <div class="triangle-box-2">
+        <div class="square"></div>
+        <div class="triangle"></div>
+    </div>
+</div>
+</body>
+</html>
