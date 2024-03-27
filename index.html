@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Challange</title>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script>
-
+      const start_date = new Date('2024-03-27');
+      const date = new Date(); 
+      let day= date.getDate(); 
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           dateClick: function(info) {
+            const selected_date = new Date(info.dateStr);
             const [year, month, date] = info.dateStr.split("-");
-            if(year >= 2024 && month >= 3 && date >=24 && date<27){
+            if(selected_date>start_date){
               window.location.href ="/css-battle-challange/" +date+month+year+"/"
             }
           }

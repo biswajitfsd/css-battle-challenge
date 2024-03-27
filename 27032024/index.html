@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: rgb(245, 148, 38, 0.37);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: rgb(245, 148, 38, 1);
+            box-shadow: 0 8px 32px 0 var(--back-color);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .white-harizental-bar {
+            width: 150px;
+            height: 30px;
+            background: #FFFFFF;
+            position: absolute;
+            z-index: 2
+        }
+
+        .white-vertical-bar {
+            height: 150px;
+            width: 30px;
+            background: #FFFFFF;
+            position: absolute;
+        }
+
+        .white-vertical-bar.first {
+            transform: rotate(30deg);
+        }
+
+        .white-vertical-bar.second {
+            transform: rotate(-30deg);
+        }
+
+        .orange-dot {
+            width: 80px;
+            height: 80px;
+            background: #F59426;
+            z-index: 1;
+            border-radius: 50px;
+            position: absolute;
+        }
+
+        .white-dot {
+            width: 30px;
+            height: 30px;
+            background: #ffffff;
+            position: absolute;
+            border-radius: 50px;
+        }
+
+        .white-dot.first {
+            left: 60px;
+        }
+
+        .white-dot.second {
+            right: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent-box">
+    <div class="white-vertical-bar first"></div>
+    <div class="white-vertical-bar second"></div>
+    <div class="orange-dot"></div>
+    <div class="white-harizental-bar"></div>
+    <div class="white-dot first"></div>
+    <div class="white-dot second"></div>
+</div>
+</body>
+</html>
