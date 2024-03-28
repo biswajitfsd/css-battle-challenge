@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    :root {
+        --dark-pink: rgba(97, 27, 63, 1);
+        --light-pink: rgba(190, 49, 132, 1);
+    }
+
+    body {
+        margin: 0;
+        background: rgba(97, 27, 63, 0.37);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background: rgba(190, 49, 132, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(190, 49, 132, 1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .ice-tray {
+        width: 230px;
+        height: 120px;
+        background: var(--light-pink);
+        border-radius: 40px;
+        position: relative;
+        padding: 30px;
+    }
+
+    .cube-space {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    .cube-space:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .cube-space span {
+        width: 30px;
+        height: 50px;
+        border-radius: 40px;
+        background: var(--dark-pink);
+    }</style>
+</head>
+<body>
+<div class="parent-box">
+    <div class="ice-tray">
+        <div class="cube-space line1"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="cube-space line2"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+</div>
+</body>
+</html>
