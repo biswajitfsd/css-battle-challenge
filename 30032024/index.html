@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --light-purple: rgba(219, 190, 223, 1);
+            --dark-purple: rgba(129, 0, 143, 1);
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            background: rgba(219, 190, 223, 0.37);
+        }
+
+        .l-bar, .left-tub, .r-bar, .right-tub {
+            background: var(--dark-purple);
+            position: absolute
+        }
+
+        .center-box {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: var(--light-purple);
+            box-shadow: 0 8px 32px 0 rgba(219, 190, 223, 0.18);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .left-tub, .right-tub {
+            width: 80px;
+            height: 90px
+        }
+
+        .right-tub {
+            top: 0;
+            right: 75px
+        }
+
+        .left-tub {
+            bottom: 0;
+            left: 75px
+        }
+
+        .l-bar, .r-bar {
+            width: 170px;
+            height: 20px
+        }
+
+        .l-bar {
+            top: 90px;
+            left: 75px
+        }
+
+        .l-bar.two {
+            top: 130px
+        }
+
+        .l-bar.three {
+            top: 170px
+        }
+
+        .r-bar {
+            top: 110px;
+            right: 75px
+        }
+
+        .r-bar.two {
+            top: 150px
+        }
+
+        .r-bar.three {
+            top: 190px
+        }
+    </style>
+</head>
+<body>
+<div class=center-box>
+    <div class=right-tub></div>
+    <div class="l-bar one"></div>
+    <div class="l-bar two"></div>
+    <div class="l-bar three"></div>
+    <div class="r-bar one"></div>
+    <div class="r-bar two"></div>
+    <div class="r-bar three"></div>
+    <div class=left-tub></div>
+</div>
+</body>
+</html>
