@@ -13,3 +13,35 @@
 .home img{
      width: 100%;
 }
+.custom-event-class {
+    background-color: #76b852; /* Example background color */
+    border-radius: 8px; /* Rounded corners */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    border: 1px solid #568a47; /* Custom border */
+    text-align: center;
+    height: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.fc-day {
+    cursor: pointer; /* Makes the event capsules show a pointer cursor */
+}
+/* Change the calendar header background and text color */
+.fc-toolbar.fc-header-toolbar {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Customize the day cell backgrounds and text color */
+.fc-daygrid-day {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* Style the event capsules */
+.fc-event {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
