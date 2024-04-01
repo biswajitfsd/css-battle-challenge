@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        :root {
+            --blue-bg: rgba(10, 97, 144, 1);
+            --faded-white: rgba(239, 248, 254, 1);
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background: rgba(10, 97, 144, 0.37);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .continer-box {
+            background: var(--blue-bg);
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 32px 0 rgba(81, 43, 42, 0.18);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            position: relative;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .triangle {
+            width: 150px;
+            height: 160px;
+            position: absolute;
+            background: var(--faded-white);
+            aspect-ratio: 1/cos(30deg);
+            clip-path: polygon(50% 50%, 100% 0, 0 0);
+            transform: rotate(180deg);
+            top: -30px;
+        }
+
+        .bar {
+            width: 290px;
+            height: 40px;
+            background: var(--faded-white);
+            clip-path: polygon(6.9% 0, 93.1% 0, 100% 50%, 93.1% 100%, 6.9% 100%, 0% 50%);
+        }
+
+        .triangle.bottom {
+            transform: rotate(360deg);
+            top: unset;
+            bottom: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+
+    <div class="continer-box">
+        <div class="triangle top"></div>
+        <div class="bar"></div>
+        <div class="triangle bottom"></div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
