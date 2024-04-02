@@ -1,5 +1,11 @@
 const events_data = [
     {
+        title: 'Day Ten',
+        start: '2024-04-02',
+        end: '2024-04-02',
+        id: 'Day_Ten'
+    },
+    {
         title: 'Day One',
         start: '2024-03-24',
         end: '2024-03-24',

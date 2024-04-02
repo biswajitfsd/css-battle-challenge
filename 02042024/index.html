@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+
+    <style>
+        :root {
+            --light-green: rgba(144, 211, 166, 1);
+            --light-green-trans: rgba(144, 211, 166, 0.37);
+            --dark-green: rgba(25, 78, 41, 1);
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background: var(--light-green-trans);
+        }
+
+        .container-box {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background: var(--light-green);
+            position: relative;
+            box-shadow: 0 8px 32px 0 rgba(144, 211, 166, 1);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .bar {
+            background: var(--dark-green);
+        }
+
+        .bar.one,
+        .bar.seven {
+            position: absolute;
+            width: 210px;
+            height: 30px;
+            border-radius: 50px;
+        }
+
+        .bar.one {
+            top: 50px;
+        }
+
+        .bar.seven {
+            bottom: 50px;
+        }
+
+        .bar.two,
+        .bar.six {
+            width: 125px;
+            height: 30px;
+            position: absolute;
+        }
+
+        .bar.two {
+            left: 0;
+        }
+
+        .bar.six {
+            right: 0;
+        }
+
+        .bar.three,
+        .bar.four,
+        .bar.five {
+            width: 30px;
+            height: 140px;
+            position: absolute;
+        }
+
+        .bar.three {
+            left: 125px;
+        }
+
+        .bar.five {
+            right: 125px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+    <div class="container-box">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+        <div class="bar five"></div>
+        <div class="bar six"></div>
+        <div class="bar seven"></div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
