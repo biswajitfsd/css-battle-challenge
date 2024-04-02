@@ -1,38 +1,53 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../main.css">
     <style>
         body {
-            background: #FCDDEB;
+            background: rgba(252, 221, 235, 0.37);
             margin: 0;
             position: relative;
             width: 100vw;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
         }
 
         .center-box {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background: rgba(252, 221, 235, 1);
+            width: 400px;
+            height: 300px;
+            justify-content: center;
+            box-shadow: 0 8px 32px 0 rgba(81, 43, 42, 0.18);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            position: relative;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .rect-angle {
             width: 140px;
             height: 30px;
-            background: #D5007F;
+            background: rgba(213, 0, 127, 1);
         }
 
         .half-circle {
             width: 140px;
             height: 80px;
-            background: #D5007F;
+            background: rgba(213, 0, 127, 1);
             border-top-left-radius: 130px;
             border-top-right-radius: 130px;
             position: relative;
@@ -46,13 +61,13 @@
             transform: translateX(-50%);
             width: 40px;
             height: 80px;
-            background: #F5A9CD;
+            background: rgba(245, 169, 205, 1);
         }
 
         .triangle-box {
             width: 140px;
             height: 70px;
-            background: #D5007F;
+            background: rgba(213, 0, 127, 1);
             aspect-ratio: 1/cos(30deg);
             clip-path: polygon(50% 100%, 100% 0, 0 0);
             position: relative;
@@ -69,33 +84,39 @@
         .square {
             width: 140px;
             height: 20px;
-            background: #EF5CA5;
+            background: rgba(239, 92, 165, 1);
+            position: absolute;
+            top: 70px;
         }
 
         .triangle {
-            background: #EF5CA5;
-            aspect-ratio: 1/cos(30deg);
+            background: rgba(239, 92, 165, 1);
+            aspect-ratio: 1 / cos(30deg);
             clip-path: polygon(50% 100%, 100% 0, 0 0);
             width: 140px;
             height: 70px;
+            top: 90px;
+            position: absolute;
         }
     </style>
 </head>
+
 <body>
-<div class="home" id="home">
-    <img src="../vector60-1781-01.jpg" alt="">
-</div>
-<div class="center-box">
-    <div class="half-circle">
-        <div class="h-rect"></div>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
     </div>
-    <div class="rect-angle"></div>
-    <div class="triangle-box"></div>
-    <div class="triangle-box-2">
-        <div class="square"></div>
-        <div class="triangle"></div>
+    <div class="center-box">
+        <div class="half-circle">
+            <div class="h-rect"></div>
+        </div>
+        <div class="rect-angle"></div>
+        <div class="triangle-box"></div>
+        <div class="triangle-box-2">
+            <div class="square"></div>
+            <div class="triangle"></div>
+        </div>
     </div>
-</div>
-<script src="../index.js"></script>
+    <script src="../index.js"></script>
 </body>
+
 </html>
