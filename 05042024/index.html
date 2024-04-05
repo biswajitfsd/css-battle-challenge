@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        :root {
+            --rust-iron: rgba(99, 30, 29, 1);
+            --kesari: rgba(241, 107, 74, 1);
+        }
+
+        body {
+            background: rgba(241, 107, 74, 0.37);
+            margin: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .cb {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: var(--rust-iron);
+            position: relative;
+            width: 400px;
+            height: 300px;
+            box-shadow: 0 8px 32px 0 var(--kesari);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .cen-sq {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: var(--kesari);
+        }
+
+        .lt-f {
+            position: absolute;
+            right: 80px;
+            bottom: 30px;
+            width: 75px;
+            height: 135px;
+        }
+
+        .fh,
+        .fv1,
+        .fv2 {
+            background: var(--kesari);
+            position: absolute;
+        }
+
+        .lt-f .fv1,
+        .lt-f .fv2 {
+            width: 75px;
+            height: 15px;
+            left: 0;
+        }
+
+        .lt-f .fv2 {
+            top: 45px;
+        }
+
+        .lt-f .fh {
+            height: 135px;
+            width: 15px;
+            left: 0;
+            top: 0;
+        }
+
+        .lt-f.two {
+            transform: rotate(-90deg);
+            top: 0;
+            right: 110px;
+        }
+
+        .lt-f.three {
+            transform: rotate(-180deg);
+            top: 30px;
+            left: 80px;
+        }
+
+        .lt-f.four {
+            transform: rotate(90deg);
+            bottom: 0;
+            left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+    <div class=cb>
+        <div class=cen-sq></div>
+        <div class="lt-f one">
+            <div class=fv1></div>
+            <div class=fv2></div>
+            <div class=fh></div>
+        </div>
+        <div class="lt-f two">
+            <div class=fv1></div>
+            <div class=fv2></div>
+            <div class=fh></div>
+        </div>
+        <div class="lt-f three">
+            <div class=fv1></div>
+            <div class=fv2></div>
+            <div class=fh></div>
+        </div>
+        <div class="lt-f four">
+            <div class=fv1></div>
+            <div class=fv2></div>
+            <div class=fh></div>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
