@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        :root {
+            --pink: rgba(129, 0, 143, 1);
+            --l-pink: rgba(219, 190, 223, 1);
+        }
+
+        body {
+            background: rgba(129, 0, 143, 0.37);
+            margin: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .cb {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: var(--pink);
+            box-shadow: 0 8px 32px 0 var(--pink);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .wb {
+            width: 150px;
+            height: 100%;
+            background: var(--l-pink);
+            position: relative;
+        }
+
+        .p {
+            background: var(--pink);
+        }
+
+        .cr {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            position: absolute;
+            left: 30px;
+        }
+
+        .cr.one {
+            top: 30px;
+        }
+
+        .cr.two {
+            bottom: 30px;
+        }
+
+        .bar {
+            width: 30px;
+            height: 80px;
+            position: absolute;
+            top: 110px;
+            left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+    <div class=cb>
+        <div class=wb>
+            <div class="p cr one"></div>
+            <div class="p bar"></div>
+            <div class="p cr two"></div>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
