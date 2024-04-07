@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        :root {
+            --white: rgba(204, 201, 219, 1);
+            --l-purple: rgba(157, 142, 201, 1);
+            --purple: rgba(111, 90, 175, 1);
+            --d-purple: rgba(32, 0, 67, 1);
+        }
+
+        body {
+            background: rgba(32, 0, 67, 0.37);
+            margin: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .cb {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: var(--white);
+            box-shadow: 0 8px 32px 0 var(--l-purple);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .j-stick {
+            display: flex;
+        }
+
+        .l-js,
+        .r-js {
+            position: relative;
+            width: 50px;
+            height: 120px;
+            background: var(--purple);
+        }
+
+        .screen {
+            width: 160px;
+            height: 100px;
+            background: var(--l-purple);
+            border: 10px solid var(--d-purple);
+        }
+
+        .l-js {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        .r-js {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .t-btn,
+        .b-btn {
+            width: 30px;
+            height: 30px;
+            background: var(--d-purple);
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .t-btn {
+            top: 10px;
+            left: 10px;
+        }
+
+        .b-btn {
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+
+    <div class="cb">
+        <div class="j-stick">
+            <div class="l-js">
+                <div class="t-btn"></div>
+                <div class="b-btn"></div>
+            </div>
+            <div class="screen"></div>
+            <div class="r-js">
+                <div class="t-btn"></div>
+                <div class="b-btn"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
