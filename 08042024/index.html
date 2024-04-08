@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        :root {
+            --d-purple: rgba(1, 0, 56, 1);
+            --l-purple: rgba(133, 125, 161, 1);
+        }
+
+        body {
+            background: rgba(133, 125, 161, 0.37);
+            margin: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .cb {
+            width: 400px;
+            height: 300px;
+            background: var(--d-purple);
+            position: relative;
+            box-shadow: 0 8px 32px 0 var(--l-purple);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .l-pur {
+            background: var(--l-purple);
+        }
+
+        .h,
+        .h-b {
+            position: relative;
+        }
+
+        .h .rod {
+            width: 30px;
+            height: 95px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .h .nob {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 90px;
+        }
+
+        .h.one {
+            left: 20px;
+        }
+
+        .h.two {
+            left: 170px;
+        }
+
+        .h.three {
+            left: 320px;
+        }
+
+        .h-b {
+            top: 150px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .h-b .rod {
+            width: 30px;
+            height: 95px;
+            top: -5px;
+            position: relative
+        }
+
+        .h-b .nob {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .h-b.four {
+            left: 95px;
+        }
+
+        .h-b.five {
+            right: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+        <img src="../vector60-1781-01.jpg" alt="">
+    </div>
+
+    <div class="cb">
+        <div class="h one">
+            <div class="rod l-pur"></div>
+            <div class="nob l-pur"></div>
+        </div>
+        <div class="h two">
+            <div class="rod l-pur"></div>
+            <div class="nob l-pur"></div>
+        </div>
+        <div class="h three">
+            <div class="rod l-pur"></div>
+            <div class="nob l-pur"></div>
+        </div>
+        <div class="h-b four">
+            <div class="nob l-pur"></div>
+            <div class="rod l-pur"></div>
+        </div>
+        <div class="h-b five">
+            <div class="nob l-pur"></div>
+            <div class="rod l-pur"></div>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
