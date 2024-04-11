@@ -1,4 +1,17 @@
-const events_data = [
+const events_data = {};
+events_data["battles"] = [
+    {
+        title: 'Battle 1',
+        href: './battles/_195/',
+        id: '_195'
+    },
+    {
+        title: 'Battle 2',
+        href: './battles/_196/',
+        id: '_196'
+    }
+];
+events_data["daily_challenge"] = [
     {
         title: 'Day 19',
         start: '2024-04-11',
