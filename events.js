@@ -1,5 +1,26 @@
 const events_data = [
     {
+        title: 'Day 19',
+        start: '2024-04-11',
+        end: '2024-04-11',
+        href: './11042024/',
+        id: 'Day_19'
+    },
+    {
+        title: 'Day 18',
+        start: '2024-04-10',
+        end: '2024-04-10',
+        href: './10042024/',
+        id: 'Day_18'
+    },
+    {
+        title: 'Day 17',
+        start: '2024-04-09',
+        end: '2024-04-09',
+        href: './09042024/',
+        id: 'Day_17'
+    },
+    {
         title: 'Day 16',
         start: '2024-04-08',
         end: '2024-04-08',
