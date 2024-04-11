@@ -67,10 +67,17 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding: 50px 0;
+    background-color: rgba(157, 142, 201, 1);
 }
 
 #grid div {
     height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(1, 1, 1, 0.18);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
 }
 
 #grid .iframe {
@@ -78,8 +85,10 @@
     height: 350px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(219, 190, 223, 0.18);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
 }

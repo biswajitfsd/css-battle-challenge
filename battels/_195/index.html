@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../../assets/images/css3_icon.webp" type="image/x-icon">
+    <title>Css Challenge</title>
+    <link rel="stylesheet" href="../../main.css">
+    <style>
+        :root {
+            --pink: #F459E3;
+            --orange: #E89A52;
+            --l-orange: #F9C96C;
+            --black: #131313;
+        }
+
+        body {
+            margin: 0;
+            background: rgba(244, 89, 227, 0.18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cb {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: var(--black);
+            position: relative;
+            width: 400px;
+            height: 300px;
+            box-shadow: 0 8px 32px 0 var(--l-orange);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .smile {
+            width: 240px;
+            height: 190px;
+            background: var(--orange);
+            position: absolute;
+            top: 55px;
+            left: 80px;
+            border-radius: 110px 110px 200px 200px;
+            transform: rotate(-15deg);
+            overflow: hidden;
+            background: var(--l-orange);
+        }
+
+        .p {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: var(--pink);
+            position: absolute;
+            right: 70px;
+            top: -45px;
+            z-index: 3;
+        }
+
+        .o {
+            width: 350px;
+            height: 350px;
+            border-radius: 200px;
+            background: var(--orange);
+            transform: translate(-9.5px, 9.5px);
+            position: absolute;
+            right: 20px;
+            top: -60px;
+            z-index: 2;
+        }
+
+        .l-e {
+            width: 50px;
+            height: 25px;
+            border: 15px solid var(--black);
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            border-top: none;
+            position: absolute;
+            left: 14px;
+            top: 90px;
+            z-index: 5;
+            transform: rotate(15deg);
+        }
+
+        .l-e.r {
+            left: 106px;
+            top: 115px;
+        }
+
+        .l-e:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            background: var(--black);
+            left: -15px;
+            top: -10px;
+            z-index: 5;
+        }
+
+        .l-e:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            background: var(--black);
+            right: -15px;
+            top: -10px;
+            z-index: 5;
+        }
+    </style>
+
+</head>
+<body>
+<div class="home" id="home">
+    <img src="../../assets/images/vector60-1781-01.jpg" alt="">
+</div>
+<div class="cb">
+    <div class="smile">
+        <div class="p"></div>
+        <div class="o"></div>
+        <div class="l-e"></div>
+        <div class="l-e r"></div>
+    </div>
+</div>
+
+<script src="../../index.js"></script>
+</body>
+</html>

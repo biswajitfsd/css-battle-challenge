@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/css3_icon.webp" type="image/x-icon">
+    <title>Css Challenge</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>:root {
+        --orange: rgba(244, 139, 38, 1);
+        --yellow: rgba(254, 255, 88, 1)
+    }
+
+    body {
+        background: rgba(244, 139, 38, 0.37);
+        margin: 0;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .cb {
+        width: 400px;
+        height: 300px;
+        background: var(--orange);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 0 8px 32px 0 var(--orange);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .c-box {
+        border: 30px solid var(--yellow);
+        width: 220px;
+        height: 120px
+    }
+
+    .bar {
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        background: var(--yellow)
+    }
+
+    .bar.t {
+        top: 60px
+    }
+
+    .bar.b {
+        bottom: 60px
+    }
+
+    .t-ang {
+        position: absolute;
+        top: 90px;
+        width: 162px;
+        height: 81px;
+        background: var(--yellow);
+        clip-path: polygon(50% 100%, 0 0, 100% 0)
+    }
+
+    .t-ang.orange {
+        background: var(--orange);
+        top: 48px
+    }</style>
+</head>
+
+<body>
+<div class="home" id="home">
+    <img src="../assets/images/vector60-1781-01.jpg" alt="">
+</div>
+
+<div class="cb">
+    <div class="bar t"></div>
+    <div class=c-box></div>
+    <div class="bar b"></div>
+    <div class=t-ang></div>
+    <div class="t-ang orange"></div>
+</div>
+<script src="../index.js"></script>
+</body>
+
+</html>
