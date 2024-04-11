@@ -1,10 +1,3 @@
-const el = document.getElementById("home");
-if (!!el) {
-    el.addEventListener("click", function () {
-        window.location.href = "../";
-    })
-}
-
 var date_clicked = function (selected_date) {
     const clickedDate = new Date(selected_date);
     const isEventPresent = events_data.some(event => {
@@ -16,4 +9,13 @@ var date_clicked = function (selected_date) {
     if (isEventPresent) {
         window.location.href = "/css-battle-challange/" + date + month + year + "/"
     }
-}
+};
+(function () {
+    const el = document.getElementById("home");
+    const grid = document.getElementById("grid");
+    if (!!el) {
+        el.addEventListener("click", function () {
+            window.location.href = "../";
+        })
+    }
+})();

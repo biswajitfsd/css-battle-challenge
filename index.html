@@ -1,45 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Challange</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../css3_icon.webp" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-    <script src="./events.js"></script>
-    <script>
-        const start_date = new Date('2024-03-23');
-        const date = new Date();
-        let day = date.getDate();
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                themeSystem: 'bootstrap',
-                initialView: 'dayGridMonth',
-                events: events_data,
-                eventClassNames: function(arg) {
-                    return ['custom-event-class']; // Return the class name you want to add to the event element
-                },
-                dateClick: function (info) {
-                    console.log(info);
-                    date_clicked(info.dateStr);
-                },
-                eventClick: function (info) {
-                    console.log(info);
-                    date_clicked(info.event.startStr);
-                }
-            });
-            calendar.render();
-        });
+    <title>CSS || Challange</title>
+    <style>
 
-    </script>
+    </style>
 </head>
-
 <body>
-    <div id='calendar'></div>
-    <script src="./index.js"></script>
+<div id="grid"></div>
+<script src="./events.js"></script>
+<script src="./index.js"></script>
+<script src="./landing.js"></script>
 </body>
 </html>
