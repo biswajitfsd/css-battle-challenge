@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+@font-face {
+    font-family: "RedFive";
+    src: url("./assets/RedFive.otf");
+}
+
 * {
     outline: 0;
     padding: 0;
@@ -69,12 +74,25 @@
     overflow: hidden;
 }
 
-.header img {
+.img-container img {
     height: 100%;
     position: absolute;
     right: -10px;
     border-radius: 300px 0 0 300px;
     border-left: 1px solid rgba(157, 142, 201, 0.38);
+}
+
+.text-box {
+}
+
+.text-box h1 {
+    font-family: "RedFive", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-size: 42px;
 }
 
 .lite {
