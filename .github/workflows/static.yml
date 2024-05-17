@@ -41,7 +41,7 @@ jobs:
           # Protocol used to deploy (ftp or sftp)
           method: ftp
           # The local folder to copy, defaults to root project folder
-          local_dir: root
+          local_dir: '.'
           # The remote folder to copy to, deafults to root FTP folder
           remote_dir: public_html
                 
