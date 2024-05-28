@@ -29,22 +29,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Fast FTP
-        uses: anvil-solutions/Fast-FTP-Action@2.1.3
-        with:
-          # FTP server name (you may need to specify a port)
-          server: files.000webhost.com
-          # FTP account username
-          username: laciniate-watches
-          # FTP account password
-          password: Biswa@1305
-          # Protocol used to deploy (ftp or sftp)
-          method: ftp
-          # The local folder to copy, defaults to root project folder
-          local_dir: '.'
-          # The remote folder to copy to, deafults to root FTP folder
-          remote_dir: public_html
-                
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
